@@ -1,0 +1,6 @@
+pages/ProfilePage.class
+pages/RecoverPasswordPage.class
+user/User.class
+pages/AuthorizationPage.class
+pages/RegistrationPage.class
+pages/MainPage.class

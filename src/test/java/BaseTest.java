@@ -21,9 +21,6 @@ public class BaseTest {
     public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        //driver = new ChromeDriver(new ChromeOptions().setBinary("C:\\Users\\KiLaTiV\\AppData\\Local\\Yandex\\YandexBrowser\\Application\\browser.exe"));
-        //driver.manage().window().maximize();
-
         mainPage = new MainPage(driver);
         authorizationPage = new AuthorizationPage(driver);
         registrationPage = new RegistrationPage(driver);
@@ -35,5 +32,13 @@ public class BaseTest {
     @After
     public void tearDown() {
         driver.quit();
+    }
+
+    public void registerUser() {    //регистрация пользователя
+        user = User.getRandomUser();                                        //создать пользователя
+        mainPage.openPage();                                                //открыть главную страницу
+        mainPage.clickPersonalAccountButton();                              //вход в "Личный кабинет"
+        authorizationPage.clickRegistrationButton();                        //переход по ссылке "Зарегистрироваться"
+        registrationPage.userRegistration(user);                            //регистрация пользователя
     }
 }

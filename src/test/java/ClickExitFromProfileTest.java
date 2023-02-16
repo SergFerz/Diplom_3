@@ -1,19 +1,14 @@
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Before;
 import org.junit.Test;
-import user.User;
 
 import static org.junit.Assert.assertEquals;
 
 
 public class ClickExitFromProfileTest extends BaseTest {
-    @Before //регистрация пользователя
+    @Before
     public void registrationUser() {
-        user = User.getRandomUser();                                        //создать пользователя
-        mainPage.openPage();                                                //открыть главную страницу
-        mainPage.clickPersonalAccountButton();                              //вход в "Личный кабинет"
-        authorizationPage.clickRegistrationButton();                        //переход по ссылке "Зарегистрироваться"
-        registrationPage.userRegistration(user);                            //регистрация пользователя
+        registerUser();
     }
 
     @Test

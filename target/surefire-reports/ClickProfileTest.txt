@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ClickProfileTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.214 s - in ClickProfileTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 56.922 s - in ClickProfileTest

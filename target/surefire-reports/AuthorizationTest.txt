@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: AuthorizationTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.819 s - in AuthorizationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.002 s - in AuthorizationTest

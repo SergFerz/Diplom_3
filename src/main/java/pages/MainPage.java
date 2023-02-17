@@ -72,18 +72,21 @@ public class MainPage {
     }
 
     //выбрать раздел "Булки"
-    public void clickBunsButton() {
+    public String clickBunsButton() {
         driver.findElement(bunsButton).click();
+        return driver.findElement(bunsButton).getAttribute("class");
     }
 
     //выбрать раздел "Соусы"
-    public void clickSaucesButton() {
+    public String clickSaucesButton() {
         driver.findElement(saucesButton).click();
+        return driver.findElement(saucesButton).getAttribute("class");
     }
 
     //выбрать раздел "Начинки"
-    public void clickIngredientsButton() {
+    public String  clickIngredientsButton() {
         driver.findElement(ingredientsButton).click();
+        return driver.findElement(ingredientsButton).getAttribute("class");
     }
 
     //ожидание появления кнопки "Оформить заказ"
